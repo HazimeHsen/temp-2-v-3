@@ -21,8 +21,8 @@ export async function POST(request) {
   };
   const ToMe = {
     from: {
-      name: "Contact form", // Custom sender name
-      address: process.env.MY_EMAIL,
+      name: "Contact form",
+      address: data.email,
     },
     to: process.env.MY_EMAIL,
     subject: `Portfolio Contact`,
