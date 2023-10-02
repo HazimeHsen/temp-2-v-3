@@ -25,3 +25,23 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+canvas {
+  overflow: visible;
+  margin: 0 auto;
+}
+
+/* Media query for small screens (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
+  canvas {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
+/* Styles for larger screens (full width) */
+@media screen and (min-width: 769px) {
+  canvas {
+    width: 400px !important;
+    height: 300px !important; /* Allow the height to adjust proportionally */
+  }
+}
